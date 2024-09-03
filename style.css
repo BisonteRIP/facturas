@@ -149,3 +149,16 @@ header .titulo-principal{
     font-weight: 500;
     color: #363636;
 }
+.table-row-items{
+    display: grid;
+    justify-content: space-between;
+    justify-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 10px 0;
+    padding: 10px 0;
+    word-wrap: break-word;
+}
+.button-red{
+    background-color: #ec3030;
+    color: #f5f5f5;
+}

@@ -1,5 +1,5 @@
 {
-  "name": "factura-app",
+  "name": "facturas",
   "version": "1.0.0",
   "main": "main.js",
   "scripts": {
@@ -7,9 +7,12 @@
     "start": "electron ."
   },
   "author": "Vicente Quiroz",
-  "license": "ISC",
+  "license": "MIT",
   "description": "",
   "devDependencies": {
     "electron": "^32.0.1"
+  },
+  "eslintConfig":{
+    "entends": "standard"
   }
 }
