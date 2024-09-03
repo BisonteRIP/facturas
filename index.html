@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="container">
+        <h1 class="titulo-principal">Factura</h1>
+    </header>
+    <section class="container">
+        <div class="cabecera-de-factura">
+            <h2 class="titulo-secundario">Cabecera de Factura</h2>
+        </div>
+
+        <div class="input-principal">
+            <label for="razon-social" class="all-label">Razon Social
+                <input 
+                    type="text" 
+                    class="all-input" 
+                    id="razon-social" 
+                    placeholder="Razon Social">
+            </label>
+            <label for="rif" class="all-label">Rif/C.I
+                <input 
+                    type="text" 
+                    class="all-input" 
+                    id="rif"
+                    placeholder="j-123456789">
+            </label>
+            <label for="numero-telefono" class="all-label">Numero
+                <input 
+                    type="number" 
+                    class="all-input" 
+                    id="numero-telefono"
+                    placeholder="0424-000-0000">
+            </label>
+            <label for="direccion" class="all-label" id="contenedor-direccion">Direccion
+                <input 
+                    type="text" 
+                    class="all-input" 
+                    id="direccion" 
+                    placeholder="ej: Calle Luna">
+            </label>
+            <label for="fecha" class="all-label">Fecha
+                <input 
+                    type="date" 
+                    class="all-inpu" 
+                    id="fecha">
+            </label>
+            
+        </div>
+    </section>
+    <section class="container input-secundario">
+        <form action="" class="row" id="form-detalle">
+            <label for="cantidad" class="all-label" id="label-cantidad">Cantidad
+                <input 
+                    type="Number" 
+                    class="all-input"
+                    id="cantidad">
+            </label>
+            
+            <label for="descripcion" class="all-label" id="label-descripcion">Descripcion
+                <input 
+                    type="text" 
+                    class="all-input"
+                    id="descripcion">
+            </label> 
+            <label for="precio-unidad" class="all-label" id="label-p-unidad">P.Unit
+                <input 
+                    type="Number" 
+                    class="all-input"
+                    id="precio-unidad">
+            </label>
+            <label for="precio-total" class="all-label" id="label-p-total">P.Total
+                <input 
+                    type="Number" 
+                    class="all-input"
+                    id="precio-total">
+            </label>
+            <button type="button" class="button-blue">Agregar</button>
+        </form>
+        
+    </section>
+    <div class="container">
+        <button class="button-black">Guardar Factura</button>
+    </div>
+    <section class="container table-container">
+        <div class="header-table table-row">
+            <div class="header-table-item">Cantidad</div>
+            <div class="header-table-item">Descripcion</div>
+            <div class="header-table-item">P.unitario</div>
+            <div class="header-table-item">P.Total</div>
+            <div class="header-table-item">Acciones</div>
+        </div>
+        
+    </section>
+    <script src="/factura.js"></script>
+</body>
+</html>

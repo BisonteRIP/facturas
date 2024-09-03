@@ -1,0 +1,9 @@
+# Node modules
+node_modules
+
+# Dist and build directories
+dist/
+build/
+
+# Editor-specific files
+.vscode/
