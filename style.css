@@ -49,13 +49,15 @@ header .titulo-principal{
     font-weight: 500;
 }
 .input-principal{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
     background-color: #fff;
     height: 175px;
     padding: 15px 0 0 0;
     border: 1px solid rgba(0, 0, 0, 0.1) ;
+}
+.form-input-principal{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 .all-label{
     display:flex;
@@ -89,11 +91,6 @@ header .titulo-principal{
     color: #9c9c9c;
     margin: 3px 0 0 0;
 }
-.input-secundario .all-label{
-    display: flex;
-    flex-direction: row;
-}
-
 .row{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -104,10 +101,13 @@ header .titulo-principal{
 }
 .input-secundario .all-label{
     display:flex;
+    flex-direction: row;
     flex-direction: column;
     justify-content: center;
     height: 110px;
-    width: 120px;
+}
+.input-secundario .all-input{
+    width: 100%;
 }
 #label-descripcion{
     grid-column: 2/4;
@@ -115,9 +115,12 @@ header .titulo-principal{
 }
 
 .button-blue{
+    justify-content: center;
+    justify-items: center;
     align-items: center;
     color: #f5f5f5;
     margin-top: 25px;
+    margin-left: 10%;
 }
 .button-blue:hover{
     background-color: #547af5;
